@@ -1,0 +1,9 @@
+#! /usr/bin/env ruby
+
+require 'pilcrow'
+
+locale = ARGV[0]
+text = ARGV[1] || ""
+text = STDIN.read if text.empty?
+
+STDOUT.write(Pilcrow.process(text, locale))
