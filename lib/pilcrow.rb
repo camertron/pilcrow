@@ -30,7 +30,7 @@ module Pilcrow
 
     def insert_markers(segments)
       # pilcrow character: http://en.wikipedia.org/wiki/Pilcrow
-      segments.join("\u00B6")
+      segments.join("-")
     end
 
   end
